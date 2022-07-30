@@ -1,0 +1,148 @@
+body {
+    background: rgb(255, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+#side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #F7F7F7
+}
+
+.ilustration {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 50%;
+    height: 100%;
+}
+
+#container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    
+}
+
+#content-h2 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 40rem;
+    gap: 5rem;
+}
+
+#container h2 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+}
+
+#container #rodape {
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    gap: 3rem;
+}
+
+#rodape p {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#buttons button {
+    width: 900px;
+    height: 35px;
+    border: none;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#start-button {
+    background: #31c931;
+}
+
+#stop-button {
+    background: #d85a5a;
+}
+
+#reset-button {
+    background: #a6a6d3;
+}
+
+#start-button,
+#stop-button,
+#reset-button {
+    max-width: 20rem;
+}
+
+@media (max-width: 1280px) {
+    #side {
+        display: none;
+    }
+
+    #container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #start-button,
+    #stop-button,
+    #reset-button {
+        max-width: 35rem;
+    }
+
+    #content-h2 {
+        gap: 0;
+    }
+
+    #content-h2 h2 {
+        font-size: 3rem;
+    }
+
+    #rodape p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="side">
+            <img src="./assets/ilustration.png" alt="">
+    </div>
+
+    <div id="container">
+        <h1>Cronômetro</h1>
+
+        <div id="content-h2">
+            <h2 class="horas">00</h2>
+            <h2 class="minutos">00</h2>
+            <h2 class="segundos">00</h2>
+            <h2 class="milisegundos">00</h2>
+        </div>
+
+        <div id="rodape">
+            <p>Horas</p>
+            <p>Minutos</p>
+            <p>Segundos</p>
+            <p>Milisegundos</p>
+        </div>
+
+        <div id="buttons">
+            <button id="start-button" onclick="start()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="32"
+                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 4v16l13 -8z" />
+                </svg>
+            </button>
+
+            <button id="stop-button" onclick="stop()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="32"
+                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="6" y="5" width="4" height="14" rx="1" />
+                    <rect x="14" y="5" width="4" height="14" rx="1" />
+                </svg>
+            </button>
+
+            <button id="reset-button" onclick="reset()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rotate-clockwise" width="32"
+                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>
